@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <style>
+        body{
+            background: rgb(211, 211, 243);
+        }
+        h1{
+            font-weight: bold;
+            text-align: center;
+        }
+        h3{
+            font-weight: bold;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>DATE</h1>
+    <h3 id="f1"></h3>
+    <h3 id="f2"></h3>
+    <script>
+      var d = new Date();
+      var date = d.getDate();
+      var month = d.getMonth();
+      var year = d.getFullYear();
+      var FullDate = date + "-" + month + "-" + year;
+      var FullDate1 = month + "/" + date + "/" + year;
+      document.getElementById("f1").innerHTML = FullDate;
+      document.getElementById("f2").innerHTML = FullDate1;
+      console.log(FullDate);
+      console.log(FullDate1);
+    </script>
+  </body>
+</html>
